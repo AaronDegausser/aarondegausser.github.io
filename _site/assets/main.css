@@ -61,7 +61,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .icon > svg path { fill: #828282; }
 
-.home .banner { background-image: url("banner_background.png"); background-repeat: no-repeat; background-size: cover; color: #FEFEFA; height: 500px; }
+.home .banner { background-image: url("banner_background.png"); background-repeat: no-repeat; background-size: cover; color: #FEFEFA; height: 500px; display: flex; }
 
 .home .banner .banner-contents { padding: 50px; max-width: 997px; display: flex; align-items: center; margin: auto; }
 
