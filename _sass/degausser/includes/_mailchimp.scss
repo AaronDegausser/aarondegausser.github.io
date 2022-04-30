@@ -1,0 +1,63 @@
+.section-mailchimp {
+    padding: 50px;
+
+    .container {
+        max-width: $medium-width;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+
+        .mailing-info {
+            width: 100%;
+            text-align: center;
+
+            .mailing-header {
+                text-transform: uppercase;
+                margin: 0px;
+                font-size: 2.5em;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+        
+            .mailing-detail {
+        
+            }
+        }
+
+        .mailchimp {
+            width: 100%;
+
+            #mc_embed_signup {
+                margin: auto; 
+                .mc-field-group {
+                    width: 84%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .optionalParent {
+                    width: 15%;
+                    display: inline-block;
+                    vertical-align: top;
+
+                    input {
+                        background-color: $highlight-color;
+                    }
+                }
+
+                #mce-responses {
+                    padding: 0px;
+                    margin: 0px;
+                    width: 100%;
+
+                    .response {
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

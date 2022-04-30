@@ -1,34 +1,44 @@
 ---
 layout: default
+title: Maybe
 ---
 
 <div class="home">
+  <div class="banner">
+    <div class="banner-contents">
+      <div class="banner-info">
+        <div class="header-group">
+          <h3 class="banner-header">Spoiled</h3>
+          <h4 class="banner-header-sub">Turnips</h4>
+        </div>
+        <div class="footer-group">
+          <h5 class="banner-footer">Coming Soon</h5>
+          <h6 class="banner-footer-sub">To Android and iOS</h6>
+        </div>
+      </div>
+      <div class="banner-image">
+        <img src="assets/turnip.png" alt="A Happy Turnip">
+      </div>
+    </div>
+  </div>
   {%- if page.title -%}
-    <h1 class="page-heading">Another</h1>
+    <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  <section class="section-mailchimp">
+    <div class="container">
+      <div class="mailing-info">
+        <h2 class="mailing-header">Join the Mailing List</h2>
+		    <p class="mailing-detail">Stay up to date on Spoiled Turnips and other Degausser projects.</p>
+      </div>
+      {%- include mailchimp_form.html -%}
+    </div>
+  </section>
 
-    <p class="rss-subscribe">testing <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  <section id="about" class="section-about">
+
+  </section>
 
 </div>

@@ -1,0 +1,42 @@
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+
+    .wrapper {
+        padding: 0px 50px;
+        font-size: 15px;
+        color: #444;
+
+        .footer-heading {
+            font-size: 18px;
+            text-align: center;
+
+            span{
+                color: #444;
+            }
+        }
+
+        .footer-cols {
+            display: flex;
+
+            .footer-col {
+                font-size: 48px;
+                text-align: center;
+                flex: 1;
+                
+                svg {
+                    fill: #444;
+                    width: 24px;
+
+                    &:hover{
+                        fill: $highlight-color;
+                    }
+                }
+    
+                @media(min-width: $medium-width) {
+    
+                }
+            }
+        }
+    }
+}
